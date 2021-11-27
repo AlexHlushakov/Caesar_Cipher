@@ -1,0 +1,120 @@
+/* trocchi-regular - latin */
+@font-face {
+  font-family: "Trocchi";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/trocchi-v9-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/trocchi-v9-latin-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/trocchi-v9-latin-regular.woff2") format("woff2"),
+    url("../fonts/trocchi-v9-latin-regular.woff") format("woff"),
+    url("../fonts/trocchi-v9-latin-regular.ttf") format("truetype"),
+    url("../fonts/trocchi-v9-latin-regular.svg#Trocchi") format("svg");
+  /* Legacy iOS */
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#dfb11a), to(#c45e0a));
+  background: linear-gradient(to right, #dfb11a, #c45e0a);
+  font-family: "Trocchi", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15% 10px 0px 10px;
+}
+
+.container h1 {
+  font-size: 50px;
+  max-width: 800px;
+  width: 100%;
+  color: whitesmoke;
+  text-shadow: 5px 5px 10px #000;
+  text-align: center;
+  font-stretch: expanded;
+}
+
+.container .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  max-width: 700px;
+  width: 100%;
+  padding-top: 75px;
+}
+
+.container .control #phrase {
+  height: 50px;
+  max-width: 450px;
+  width: 100%;
+  font-size: 20px;
+  font-family: "Trocchi", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  -webkit-box-shadow: 5px 10px 10px #000;
+  box-shadow: 5px 10px 10px #000;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.container .control #decode-btn {
+  height: 50px;
+  width: 150px;
+  background-color: #683904;
+  color: whitesmoke;
+  font-size: 24px;
+  font-family: "Trocchi", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  -webkit-box-shadow: 5px 10px 10px #000;
+  box-shadow: 5px 10px 10px #000;
+  border-radius: 8px;
+}
+
+.container #result {
+  margin-top: 50px;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 26px;
+}
+
+@media (max-width: 620px) {
+  .container h1 {
+    font-size: 36px;
+  }
+  .container .control {
+    flex-direction: column;
+  }
+  .container .control #phrase {
+    font-size: 18px;
+    margin: 10px;
+  }
+  .container .control #decode-btn {
+    margin-top: 20px;
+  }
+  .container #result {
+    font-size: 20px;
+    margin: 50px 10px 0 10px;
+  }
+}
